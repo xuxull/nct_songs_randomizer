@@ -1,13 +1,8 @@
-nct_songs = ["Walk", "We go up", "Phantom"]
-print(nct_songs[1])
+import random
 
-nct_songs.append("Teddy bear")
+# Read songs from file
+with open('nct_songs.txt', 'r') as file:
+    nct_songs = [line.strip() for line in file]
 
-print(nct_songs)
-
-nct_songs.remove(nct_songs[0])
-print(nct_songs)
-
-nct_songs.insert(1, "Misfits")
-
-print("Teddy bear" in nct_songs)
+# Randomize and print
+print("Your random NCT song is:", random.choice(nct_songs))
