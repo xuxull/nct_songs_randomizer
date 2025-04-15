@@ -8,6 +8,3 @@ with open('nct_songs.txt', 'r') as file:
 print("Your random NCT song is:", random.choice(nct_songs))
 
 print("Such a good choice!"))
-print("NEO GOT YOUR BACK!"))
-print("please stream!"))
-print("do you want a new one?"))
